@@ -32,7 +32,6 @@ jobs:
         run: |
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          git checkout -b gh-pages
           mv _build/html/* .
           git add .
           git commit -m "Deploy Sphinx documentation"
