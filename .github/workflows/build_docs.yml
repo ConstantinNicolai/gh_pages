@@ -33,7 +33,7 @@ jobs:
           cd docs
           git config --global user.email "actions@github.com"
           git config --global user.name "GitHub Actions"
-          mv _build/* .
+          mv _build/html/* .
           git add .
           git commit -m "Deploy Sphinx documentation"
           git push -f origin gh-pages
